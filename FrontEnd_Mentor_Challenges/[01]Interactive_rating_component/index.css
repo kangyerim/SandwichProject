@@ -11,19 +11,40 @@
 
 .form {
   position: relative;
-  top: 80px;
+  top: 50px;
 }
 
 .textWrap {
   padding: 0 30px 0 30px;
 }
 
+.i_star {
+  width: 20px;
+  height: 20px;
+
+  background-color: gray;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 0 10px 30px;
+}
+
+.circled_button {
+  display: flex;
+}
 .submit {
   background-color: white;
   border: 0;
   outline: 0;
-  width: 400px;
+  width: 350px;
   height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  vertical-align: middle;
+
+  position: relative;
+  left: 6%;
 }
 
 .attribution {
@@ -54,4 +75,8 @@ li {
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
+}
+
+h3 {
+  margin: 0;
 }
