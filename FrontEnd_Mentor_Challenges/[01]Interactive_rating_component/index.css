@@ -77,6 +77,10 @@ li {
   line-height: 50px;
 }
 
+li:hover {
+  background-color: yellow;
+}
+
 h3 {
   margin: 0;
 }
