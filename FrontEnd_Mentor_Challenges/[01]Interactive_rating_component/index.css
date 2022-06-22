@@ -2,7 +2,7 @@
   width: 400px;
   height: 370px;
   border-radius: 8%;
-  background-color: silver;
+  background: linear-gradient(rgb(75, 75, 90), hsl(216, 52%, 21%));
 
   position: fixed;
   top: 30%;
@@ -22,7 +22,7 @@
   width: 20px;
   height: 20px;
 
-  background-color: gray;
+  background-color: hsl(216, 52%, 21%);
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
@@ -34,7 +34,8 @@
   display: flex;
 }
 .submit {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
   border: 0;
   outline: 0;
   width: 350px;
@@ -69,7 +70,7 @@ ul {
 li {
   list-style: none;
   display: inline-block;
-  background-color: orange;
+  background-color: hsl(216, 12%, 54%);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -78,9 +79,14 @@ li {
 }
 
 li:hover {
-  background-color: yellow;
+  background-color: hsl(213, 8%, 79%);
 }
 
 h3 {
   margin: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  color: hsl(0, 0%, 100%);
 }
