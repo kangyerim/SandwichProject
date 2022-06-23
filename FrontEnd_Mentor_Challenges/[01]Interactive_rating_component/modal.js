@@ -1,18 +1,28 @@
 const modalForm = document.querySelector('.modal');
-const submitButton = document.querySelector('submit');
+const form = document.querySelector('.form');
+const submitButton = document.querySelector('.submit');
+const thankForm = document.querySelector('.thank-you');
 const liTags = document.getElementsByTagName('li');
 
-let clickedLiTags;
+let clickedIndex = null;
 
 function onClick(event) {
   event.preventDefault();
-  console.log(event.target.textContent);
-  liTags[event.target.textContent].setAttribute('clicked', true);
+
+  for (let i = 0; i < liTags.length; i++) {
+    liTags[i].setAttribute('clicked', false);
+  }
+
+  const index = event.target.textContent - 1;
+  liTags[index].setAttribute('clicked', true);
+  clickedIndex = index;
 }
 
 function onSubmit(event) {
   event.preventDefault();
-  console.log('submit!!');
+  if (!clickedIndex) return;
+  form.classList.toggle('submit');
+  thankForm.classList.toggle('none');
 }
 
 function addEventToliTag() {
